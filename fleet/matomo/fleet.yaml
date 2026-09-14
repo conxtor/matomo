@@ -1,0 +1,5 @@
+defaultNamespace: matomo
+kustomize:
+  dir: .
+helm:
+  takeOwnership: true
