@@ -3,3 +3,19 @@ kustomize:
   dir: .
 helm:
   takeOwnership: true
+diff:
+  comparePatches:
+  - apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: v-0b3f2bad4708feb5
+    namespace: matomo
+    operations:
+    - op: remove
+      path: /spec/volumeName
+  - apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: v-10afb5681061ff1f
+    namespace: matomo
+    operations:
+    - op: remove
+      path: /spec/volumeName
